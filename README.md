@@ -27,18 +27,14 @@ conda activate bloodline-ga
 python -m pip install -e .[dev]
 ```
 
-既有環境已建立於：
 
-```text
-C:\Users\s06t0\anaconda3\envs\bloodline-ga
-```
 
 ## 測試與執行
 
 執行測試：
 
 ```powershell
-C:\Users\s06t0\anaconda3\envs\bloodline-ga\python.exe -B -m pytest tests -q
+python -B -m pytest tests -q
 ```
 
 若 Windows temp 目錄權限受限，可先把 pytest 暫存目錄指到 workspace：
@@ -47,13 +43,13 @@ C:\Users\s06t0\anaconda3\envs\bloodline-ga\python.exe -B -m pytest tests -q
 New-Item -ItemType Directory -Force -Path .\.tmp\pytest
 $env:TMP=(Resolve-Path .\.tmp\pytest).Path
 $env:TEMP=$env:TMP
-C:\Users\s06t0\anaconda3\envs\bloodline-ga\python.exe -B -m pytest tests -q
+python -B -m pytest tests -q
 ```
 
 執行單次 TSP smoke run：
 
 ```powershell
-C:\Users\s06t0\anaconda3\envs\bloodline-ga\python.exe -B -m experiments.phase02_smoke
+python -B -m experiments.phase02_smoke
 ```
 
 ## 完整實驗
@@ -86,13 +82,13 @@ data/results/runs/
 產生統計表、PNG 圖與 Plotly HTML：
 
 ```powershell
-C:\Users\s06t0\anaconda3\envs\bloodline-ga\python.exe -B -m analysis.report
+python -B -m analysis.report
 ```
 
 只產生 CSV 與 PNG、跳過互動 HTML：
 
 ```powershell
-C:\Users\s06t0\anaconda3\envs\bloodline-ga\python.exe -B -m analysis.report --no-interactive
+python -B -m analysis.report --no-interactive
 ```
 
 Phase 4/5 圖表會輸出到：
@@ -113,7 +109,7 @@ data/results/figures/
 啟動 Dash dashboard：
 
 ```powershell
-C:\Users\s06t0\anaconda3\envs\bloodline-ga\python.exe dashboard/app.py
+python dashboard/app.py
 ```
 
 預設網址：
