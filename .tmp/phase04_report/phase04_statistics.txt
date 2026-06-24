@@ -1,0 +1,24 @@
+Phase 4 statistical report: data\results
+
+Notes:
+- summary.csv was not found or contained no rows.
+- generation CSV files were not found or contained no rows.
+- individual snapshot CSV files were not found or contained no rows.
+
+Run Counts:
+(empty)
+
+H1 Correlations:
+(empty)
+
+H2 Anova:
+(empty)
+
+H2 Tukey:
+(empty)
+
+H3 Kruskal:
+(empty)
+
+H3 Correlations:
+(empty)

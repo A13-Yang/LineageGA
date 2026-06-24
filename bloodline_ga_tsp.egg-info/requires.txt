@@ -1,0 +1,12 @@
+numpy
+scipy
+matplotlib
+seaborn
+plotly
+pandas
+tqdm
+joblib
+dash
+
+[dev]
+pytest

@@ -1,0 +1,8 @@
+name: bloodline-ga
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - -e .[dev]
